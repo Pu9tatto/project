@@ -6,7 +6,6 @@ let c = str.toUpperCase; // c = TEST
 let d = str.toLowerCase; // d = test
 let f = str.indexOf('e'); // f=1 (ищет позицию с которой начинается значение заключенное в ())
 let f1 = str.indexOf('p'); // f1=-1
-//Изменение строк
 let h = str.slice(2,5); //вырезает строку с 2(включительно) по 5(не включительно) 
 let h1 = str.slice(2); // c 2  до конца
 let g = str.substr(1,2); // вырезает ДВА символа из строки начиная с ПЕРВОГО g = es

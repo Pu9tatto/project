@@ -10,7 +10,24 @@ let test2 = function () {
 
 const sum = (a, b) => a + b;
 // OR
-const sum2 = (a,b,c)=>{
-    let d = a+b;
-    return d+c;
+const sum2 = (a, b, c) => {
+    let d = a + b;
+    return d + c;
+};
+
+//callback - что бы функция выполнялось строго после другой функции пихаем функции в функцию 
+//и вызываем внутри вновь созданной функции
+function callback(F1, F2) {
+    F1();
+    F2();
 }
+
+function first() {
+    //do somthing
+}
+
+function second() {
+    //do some smth
+}
+callback(first, second);
+///////////////////
